@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block main_content %}
+<h2>Stations</h2>
+<table">
+    <tr>
+        <th>The stations</th>
+    </tr>
+    {% for station in stations %}
+        <tr>
+            <td>{{station}}</td>
+        </tr>
+    {% endfor %}    
+</table>
+
+{% endblock %}
